@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Latest breaking news, technology, business, sports and entertainment.">
+  <title>DailyPulse | News Portal</title>
+  <link rel="stylesheet" href="D:\News Portal\style.css">
+  <script src="D:\News Portal\script.js" defer></script>
+</head>
+<body>
+  <div class="top-strip">
+    <div class="container top-strip-content">
+      <span>DAILYPULSE NEWS NETWORK</span>
+      <span id="currentDate">Your trusted daily news source</span>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header-content">
+      <a href="#" class="logo" aria-label="DailyPulse home">
+        Daily<span>Pulse</span><b>.</b>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="navigation" id="navigation">
+        <a href="#" class="nav-link active" data-category="general">Home</a>
+        <a href="#" class="nav-link" data-category="technology">Technology</a>
+        <a href="#" class="nav-link" data-category="business">Business</a>
+        <a href="#" class="nav-link" data-category="sports">Sports</a>
+        <a href="#" class="nav-link" data-category="entertainment">Entertainment</a>
+        <a href="#" class="nav-link" data-category="health">Health</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+
+    <section class="welcome-section">
+      <div>
+        <p class="eyebrow">THE WORLD, EXPLAINED</p>
+        <h1>News that <span>matters.</span></h1>
+        <p class="subtitle">
+          Stay informed with the latest headlines, stories and updates.
+        </p>
+      </div>
+      <div class="live-indicator">
+        <span class="live-dot"></span> NEWS UPDATES
+      </div>
+    </section>
+
+    <section class="search-section">
+      <form id="searchForm" class="search-form">
+        <span class="search-icon">⌕</span>
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="Search news, topics or keywords..."
+          aria-label="Search news"
+        >
+        <button type="submit" class="search-button">Search News</button>
+      </form>
+    </section>
+
+    <section class="breaking-banner">
+      <span class="breaking-label">LATEST</span>
+      <p id="breakingText">Explore the latest headlines from around the world.</p>
+    </section>
+
+    <section class="news-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" id="sectionEyebrow">STAY INFORMED</p>
+          <h2 id="sectionTitle">Top Headlines</h2>
+        </div>
+        <button class="refresh-button" id="refreshBtn">↻ Refresh</button>
+      </div>
+
+      <div id="statusMessage" class="status-message" role="status">
+        Loading news...
+      </div>
+
+      <div id="newsGrid" class="news-grid"></div>
+
+      <div class="load-more-wrapper">
+        <button id="loadMoreBtn" class="load-more-button" hidden>
+          Load More Stories
+        </button>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div>
+        <p class="eyebrow">THE DAILY BRIEFING</p>
+        <h2>Stay ahead of the headlines.</h2>
+        <p>Subscribe to our demo newsletter for the latest updates.</p>
+      </div>
+
+      <form id="newsletterForm" class="newsletter-form">
+        <input
+          type="email"
+          id="newsletterEmail"
+          placeholder="Enter your email address"
+          aria-label="Email address"
+          required
+        >
+        <button type="submit">Subscribe</button>
+      </form>
+      <p id="newsletterMessage" class="newsletter-message" role="status"></p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <a href="#" class="logo footer-logo">Daily<span>Pulse</span><b>.</b></a>
+      <p>Independent design. Informed perspectives.</p>
+      <p>© <span id="currentYear"></span> DailyPulse News Portal</p>
+    </div>
+  </footer>
+
+</body>
+</html>
